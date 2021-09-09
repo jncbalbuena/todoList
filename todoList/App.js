@@ -28,7 +28,7 @@ setTaskItems(itemsCopy);
           {
             taskItems.map((item,index) =>{
               return (
-                <TouchableOpacity key={index} onPress={() =>completeTask()}>
+                <TouchableOpacity key={index} onPress={() =>completeTask(index)}>
                   <Task text={item} />
                 </TouchableOpacity>
               )
